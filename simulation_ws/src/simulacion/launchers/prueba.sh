@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export GAZEBO_RESOURCE_PATH=$(rospack find alpha_sim)/../Worlds:$GAZEBO_RESOURCE_PATH
+export GAZEBO_RESOURCE_PATH=$(rospack find )/../Worlds:$GAZEBO_RESOURCE_PATH
 
 DRONE_SWARM_MEMBERS=$1
 
@@ -12,4 +12,13 @@ if [ -z $DRONE_SWARM_MEMBERS ] # Check if NUMID_DRONE is NULL
   else
     	echo "-Setting DroneSwarm Members = $1"
 fi
+
+for (( c=1; c<=$DRONE_SWARM_MEMBERS; c++ ))
+do 
+gnome-terminal  \
+   	--tab --title "DroneRotorsSimulator" --command "bash -c \"
+roslaunch rotors_gazebo colwo.launch world_name:=$(realpath --relative-to=$(rospack find rotors_gazebo)/worlds/ $(rospack find colworld)/../Worlds)/alpha models_path:=$(rospack find colworld)/../models;
+						exec bash\""  &
+done
+
 
