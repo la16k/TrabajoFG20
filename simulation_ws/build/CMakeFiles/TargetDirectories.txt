@@ -35,3 +35,15 @@
 /home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/gtest/googlemock/gtest/CMakeFiles/list_install_components.dir
 /home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir
 /home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/gtest/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/install/strip.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/list_install_components.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/edit_cache.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/rebuild_cache.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/std_msgs_generate_messages_eus.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/std_msgs_generate_messages_cpp.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/std_msgs_generate_messages_lisp.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/install.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/std_msgs_generate_messages_py.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/install/local.dir
+/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/test.dir
