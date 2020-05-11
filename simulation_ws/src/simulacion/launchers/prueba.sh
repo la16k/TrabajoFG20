@@ -16,9 +16,8 @@ fi
 for (( c=1; c<=$DRONE_SWARM_MEMBERS; c++ ))
 do 
 gnome-terminal  \
-   	--tab --title "DroneRotorsSimulator" --command "bash -c \"
-roslaunch rotors_gazebo colwo.launch world_name:=$(realpath --relative-to=$(rospack find rotors_gazebo)/worlds/ $(rospack find colworld)/../Worlds)/alpha models_path:=$(rospack find colworld)/../models;
-						exec bash\""  &
+  	--tab --title "DroneRotorsSimulator" --command "bash -c \"
+roslaunch colworld colwo.launch world_name:=$(realpath --relative-to=$(rospack find rotors_gazebo)/worlds/ $(rospack find colworld)/../Worlds)/colwo models_path:=$(rospack find colworld)/../models;
+exec bash\""  &
 done
-
 
