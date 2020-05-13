@@ -1,0 +1,8 @@
+prefix=/home/lak/Escritorio/TFG/TrabajoFG20/catkin_ws/install
+
+Name: gazebo
+Description: Description of gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
