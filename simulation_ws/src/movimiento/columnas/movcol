@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+class columna {
+    private: 
+    int posicionini[2];
+
+    public: 
+    void movimiento()
+}
+
+void columna::movimiento(*posicionini) {
+
+}
