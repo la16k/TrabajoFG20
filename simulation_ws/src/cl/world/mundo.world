@@ -30,8 +30,8 @@
             </contact>
             <friction>
               <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
+                <mu>0</mu>
+                <mu2>0</mu2>
               </ode>
               <torsional>
                 <ode/>
@@ -1248,6 +1248,7 @@
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>0.965422 0.068579 0 0 -0 0</pose>
+      <plugin name="plannar_mover_plugin" filename="libplannar_mover_plugin.so"/>
     </model>
     <gui fullscreen='0'>
       <camera name='user_camera'>

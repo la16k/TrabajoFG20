@@ -587,42 +587,6 @@ clean: cl/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory movimiento
-
-# Convenience name for "all" pass in the directory.
-movimiento/all:
-
-.PHONY : movimiento/all
-
-# Convenience name for "clean" pass in the directory.
-movimiento/clean:
-
-.PHONY : movimiento/clean
-
-# Convenience name for "preinstall" pass in the directory.
-movimiento/preinstall:
-
-.PHONY : movimiento/preinstall
-
-#=============================================================================
-# Directory level rules for directory simulacion
-
-# Convenience name for "all" pass in the directory.
-simulacion/all:
-
-.PHONY : simulacion/all
-
-# Convenience name for "clean" pass in the directory.
-simulacion/clean:
-
-.PHONY : simulacion/clean
-
-# Convenience name for "preinstall" pass in the directory.
-simulacion/preinstall:
-
-.PHONY : simulacion/preinstall
-
-#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

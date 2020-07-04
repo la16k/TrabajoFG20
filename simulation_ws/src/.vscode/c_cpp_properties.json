@@ -32,13 +32,26 @@
                 "/home/lak/workspace/ros/aerostack_catkin_ws/src/aerostack_stack/stack/simulation_system/rotors_simulator/rotors_joy_interface/include/**",
                 "/home/lak/workspace/ros/aerostack_catkin_ws/src/aerostack_stack/stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros/test_mavros/include/**",
                 "/home/lak/workspace/ros/aerostack_catkin_ws/src/aerostack_stack/stack/hardware_interface/drivers_sensors/driver_camera_ueye/ueye_cam/include/**",
-                "/usr/include/**"
+                "/usr/include/**",
+                "/usr/include/gazebo-9",
+                "/usr/include/ignition/math4"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu11",
             "cppStandard": "gnu++14"
+        },
+        {
+            "name": "ROS",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "clang-x64"
         }
     ],
     "version": 4

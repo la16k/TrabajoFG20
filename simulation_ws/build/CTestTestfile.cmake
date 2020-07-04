@@ -6,5 +6,3 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("cl")
-subdirs("movimiento")
-subdirs("simulacion")

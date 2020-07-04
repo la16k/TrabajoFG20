@@ -47,17 +47,3 @@
 /home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/cl/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/cl/CMakeFiles/install/local.dir
 /home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/cl/CMakeFiles/test.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/movimiento/CMakeFiles/install/strip.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/movimiento/CMakeFiles/edit_cache.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/movimiento/CMakeFiles/list_install_components.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/movimiento/CMakeFiles/test.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/movimiento/CMakeFiles/install/local.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/movimiento/CMakeFiles/rebuild_cache.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/movimiento/CMakeFiles/install.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/install/strip.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/edit_cache.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/list_install_components.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/test.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/install/local.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/rebuild_cache.dir
-/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/simulacion/CMakeFiles/install.dir
