@@ -30,6 +30,7 @@
           <script>
             <name>Gazebo/Grey</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
+	    <trajectory id="0" type="square" tension="0"> </trajectory>
           </script>
           <shader type='vertex'>
             <normal_map>__default__</normal_map>
