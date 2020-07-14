@@ -1,0 +1,8 @@
+prefix=/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/devel
+
+Name: move_plugin
+Description: Description of move_plugin
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,2 +1,2 @@
-cl
+cl:move_plugin
 -DCATKIN_DEVEL_PREFIX=/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/install -G Unix Makefiles
