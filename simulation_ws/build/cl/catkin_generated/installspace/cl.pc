@@ -1,8 +1,0 @@
-prefix=/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/install
-
-Name: cl
-Description: Description of cl
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
