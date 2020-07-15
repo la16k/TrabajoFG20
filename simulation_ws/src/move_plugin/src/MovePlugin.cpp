@@ -4,6 +4,7 @@
 #include <gazebo/physics/physics.hh>
 #include <gazebo/common/common.hh>
 #include <stdio.h>
+#include <iostream>
 
 namespace gazebo
 {

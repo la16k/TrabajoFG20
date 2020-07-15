@@ -926,7 +926,7 @@
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>0.973854 0.066093 0 0 -0 0</pose>
+      <plugin name="Move" filename="libmove_plugin_node.so"/>
     </model>
-    <plugin name="Move" filename="libmove_plugin_node.so"/>
   </world>
 </sdf>
