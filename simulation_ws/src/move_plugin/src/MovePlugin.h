@@ -7,6 +7,7 @@
 #include <ros/ros.h>
 #include <rosgraph_msgs/Clock.h>
 #include <boost/bind.hpp>
+#include <stdlib.h>
 
 // #include <ignition/math/Quaternion.hh>
 // #include <ignition/math/Vector3.hh>

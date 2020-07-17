@@ -95,6 +95,8 @@ void Move::OnUpdate(const common::UpdateInfo & /*_info*/)
         // Compute velocity
         vel_ = A_*w_*cos(w_*sec);
 
+        // vel_ = 2;
+
         // Apply a small linear velocity to the model.
         this->model->SetLinearVel(ignition::math::Vector3d(0, vel_, 0));
 // #endif

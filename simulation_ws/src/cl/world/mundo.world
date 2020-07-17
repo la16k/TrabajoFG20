@@ -91,40 +91,40 @@
       <wall_time>1594919452 448309802</wall_time>
       <iterations>1522930</iterations>
       <model name='columna'>
-        <pose frame=''>0.973826 -2.45043 1.15 -0 -0 -0.000751</pose>
+        <pose frame=''>0 0 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0.973826 -2.45043 1.15 -0 -0 -0.000751</pose>
+          <pose frame=''>0 0 0 0 0 0</pose>
           <velocity>0 0.333787 0.0098 -0 -0 -0</velocity>
           <acceleration>0 0 9.8 0 -0 0</acceleration>
           <wrench>0 0 9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='columna_0'>
-        <pose frame=''>2.97224 -3.03235 1.14999 -1e-06 -1e-06 0</pose>
+        <pose frame=''>1 0 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>2.97224 -3.03235 1.14999 -1e-06 -1e-06 0</pose>
+          <pose frame=''>1 0 0 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='columna_1'>
-        <pose frame=''>4.97424 -2.98852 1.15 1e-06 1e-06 0</pose>
+        <pose frame=''>2 0 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>4.97424 -2.98852 1.15 1e-06 1e-06 0</pose>
+          <pose frame=''>2 0 0 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='columna_2'>
-        <pose frame=''>6.98607 -2.9956 1.14999 -1e-06 -1e-06 0</pose>
+        <pose frame=''>3 0 0 0 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>6.98607 -2.9956 1.14999 -1e-06 -1e-06 0</pose>
+          <pose frame=''>3 0 0 0 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
