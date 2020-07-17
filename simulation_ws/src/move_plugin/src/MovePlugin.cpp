@@ -43,10 +43,10 @@ void Move::Load(physics::ModelPtr _parent, sdf::ElementPtr _sdf)
             return;
         }
 
-        if (_sdf->HasElement("robotNamespace"))
-          namespace_ = _sdf->GetElement("robotNamespace")->Get<std::string>();
-        else
-          gzwarn << "[gazebo_moving_platform] Please specify a robotNamespace.\n";
+        // if (_sdf->HasElement("robotNamespace"))
+        //   namespace_ = _sdf->GetElement("robotNamespace")->Get<std::string>();
+        // else
+        //   gzwarn << "[gazebo_moving_platform] Please specify a robotNamespace.\n";
 
         this->node_handle_ = new ros::NodeHandle(namespace_);
 
@@ -72,9 +72,9 @@ void Move::OnUpdate(const common::UpdateInfo & /*_info*/)
         //cout << sec << endl;
 // #ifdef SLOW_MP
 	// Slow
-        A_ = 2.7;
-        T_ = 13.5 * M_PI;
-        w_ = 2 * M_PI / T_;
+        A_ = 2.5; // Amplitud, TOTAL PAREDES 5m
+        T_ = 2.5 * M_PI; //Perido
+        w_ = 2 * M_PI / T_; //Frecuencia angular
 // #endif
 
 // #ifdef MID_MP
@@ -93,7 +93,7 @@ void Move::OnUpdate(const common::UpdateInfo & /*_info*/)
 
 // #if defined SLOW_MP || defined MID_MP || defined FAST_MP
         // Compute velocity
-        vel_ = A_*w_*cos(w_*sec);
+        vel_ = A_*w_*cos(w_*sec); // vel max 2 m/s
 
         // vel_ = 2;
 
@@ -162,12 +162,10 @@ void Move::OnUpdate(const common::UpdateInfo & /*_info*/)
 	    //this->model->SetAngularVel(math::Vector3(0, 0, 0.2));
 //        }
         // Get world pose
-        //       math::Pose pose = this->model->GetWorldPose();
-        //       math::Vector3 pos = pose.pos;
-        //       cout << "Moving Platform current pose" << endl;
-        //       cout << "x: " << pos.x << "y: " << pos.y << "z: " << pos.z << endl;
-
-
+              ignition::math::Pose3d model_ = this->model->WorldPose();
+            //   ignition::math::Vector3 pos_ = Pos();
+              cout << "Position" << endl;
+              cout << model_.Pos() << endl;
 
     }
 
