@@ -7,13 +7,13 @@
 #include <ros/ros.h>
 #include <rosgraph_msgs/Clock.h>
 #include <boost/bind.hpp>
-#include <stdlib.h>
 
 // #include <ignition/math/Quaternion.hh>
 // #include <ignition/math/Vector3.hh>
 // #include <ignition/math/config.hh>
 
 #define MILLION 1E9
+#define HOWFLUID 1000
 // #define COUNTER_MAX 20000
 
 // Choose the platform mode
@@ -73,11 +73,15 @@ public:
     double initial_time_nsec;
     double vel_, vel_x_, b_, w1_, P_T_;
     bool updated_;
-    int counter;
+    bool flag, flag2, flag3;
+    int counter, i, j;
     ignition::math::Pose3d initial_pose_;
     double A_;
     double T_;
     double w_;
+    int rand1;
+    int rand2;
+    // double random;
 
 // #ifdef RUNAWAY
 //     const double SETTLELING_TIME = 6.0;

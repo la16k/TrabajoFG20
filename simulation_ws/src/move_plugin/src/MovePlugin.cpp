@@ -58,9 +58,14 @@ void Move::Load(physics::ModelPtr _parent, sdf::ElementPtr _sdf)
 
         // Get initial pose
         initial_pose_ = this->model->WorldPose();
+        // Another random pose
+        initial_pose_.Pos().Y() = ignition::math::Rand::DblUniform(-2.25, 2.25);
+        this->model->SetWorldPose(initial_pose_);
         
         // Init variables
         updated_ = false;
+        flag = true;
+        i = 0; j = 0;
     }
 
     // Called by the world update start event
@@ -73,8 +78,16 @@ void Move::OnUpdate(const common::UpdateInfo & /*_info*/)
 // #ifdef SLOW_MP
 	// Slow
         A_ = 2.5; // Amplitud, TOTAL PAREDES 5m
-        T_ = 2.5 * M_PI; //Perido
+        T_ = 2.5 * M_PI; //Periodo
         w_ = 2 * M_PI / T_; //Frecuencia angular
+
+        // random = ignition::math::Rand::DblUniform(0, 1);
+        rand1 = ignition::math::Rand::IntUniform(0, HOWFLUID);
+        rand2 = ignition::math::Rand::IntUniform(0, HOWFLUID);
+
+        if (rand1 == rand2) {
+            flag = !flag;
+        }
 // #endif
 
 // #ifdef MID_MP
@@ -95,10 +108,40 @@ void Move::OnUpdate(const common::UpdateInfo & /*_info*/)
         // Compute velocity
         vel_ = A_*w_*cos(w_*sec); // vel max 2 m/s
 
+        ignition::math::Pose3d position = this->model->WorldPose();
         // vel_ = 2;
-
+        if (position.Pos().Y() < 2.15 && position.Pos().Y() > -2.15) {
         // Apply a small linear velocity to the model.
-        this->model->SetLinearVel(ignition::math::Vector3d(0, vel_, 0));
+            if (flag) {
+                this->model->SetLinearVel(ignition::math::Vector3d(0, -vel_, 0));
+            } else {
+               this->model->SetLinearVel(ignition::math::Vector3d(0, vel_, 0));
+            }
+            
+        } else {
+            // Limits
+            if (position.Pos().Y() < -2.15 /*|| flag2*/) {
+                vel_ = 2;
+                flag = !flag;
+                // flag2 = true;
+                // i++;
+                // if (i>4){
+                //     flag2 = false;
+                //     i = 0;
+                // }
+            }
+            if (position.Pos().Y() > 2.15 /*|| flag3*/) {
+                vel_ = -2;
+                flag = !flag;
+                // flag3 = true;
+                // j++;
+                // if (j>4){
+                //     flag3 = false;
+                //     j = 0;
+                // }
+            }
+            this->model->SetLinearVel(ignition::math::Vector3d(0, vel_, 0));
+        }
 // #endif
 
 // #ifdef EIGHT_SHAPE
@@ -169,7 +212,6 @@ void Move::OnUpdate(const common::UpdateInfo & /*_info*/)
 
     }
 
-
 void Move::getSimulationClockTime(const rosgraph_msgs::Clock::ConstPtr& msg){
 
     ros::Time _time = msg->clock;
@@ -184,9 +226,9 @@ void Move::getSimulationClockTime(const rosgraph_msgs::Clock::ConstPtr& msg){
         initial_time_nsec = _time.nsec;
 
         // Reorient model
-        // pose.Pose3.x = initial_pose_.Pose3.x;
-        // pose.Pos.y = initial_pose_.Pos.y;
-        // pose.Pos.z = initial_pose_.Pos.z;
+        // pose.Pos().X() = initial_pose_.Pos().X();
+        // pose.Pos().Y() = initial_pose_.Pos().Y();
+        // pose.Pos().Z() = initial_pose_.Pos().Z();
 //        pose.rot.x = 0;
 //        pose.rot.y = 0;
 //        pose.rot.z = 0;
