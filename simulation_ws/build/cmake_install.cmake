@@ -131,8 +131,18 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/gtest/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_description/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_simulator/cmake_install.cmake")
   include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/cl/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_comm/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_evaluation/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rqt_rotors/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_control/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_joy_interface/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_hil_interface/cmake_install.cmake")
   include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/move_plugin/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_gazebo_plugins/cmake_install.cmake")
+  include("/home/lak/Escritorio/TFG/TrabajoFG20/simulation_ws/build/rotors_simulator/rotors_gazebo/cmake_install.cmake")
 
 endif()
 

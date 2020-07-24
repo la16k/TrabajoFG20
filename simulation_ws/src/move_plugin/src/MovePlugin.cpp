@@ -207,8 +207,8 @@ void Move::OnUpdate(const common::UpdateInfo & /*_info*/)
         // Get world pose
               ignition::math::Pose3d model_ = this->model->WorldPose();
             //   ignition::math::Vector3 pos_ = Pos();
-              cout << "Position" << endl;
-              cout << model_.Pos() << endl;
+            //   cout << "Position" << endl;
+            //   cout << model_.Pos() << endl;
 
     }
 
