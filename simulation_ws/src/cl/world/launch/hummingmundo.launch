@@ -28,7 +28,7 @@
       <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
       <arg name="log_file" value="$(arg log_file)"/>
       <arg name="namespace" value="hummingbird"/>
-      <arg name="x" value="-0.5" />
+      <arg name="x" value="-2" />
       <arg name="y" value="0.0" />
     </include>
   </group>
