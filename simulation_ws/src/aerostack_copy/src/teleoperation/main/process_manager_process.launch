@@ -1,0 +1,37 @@
+<!-- Launches: process_manager_process -->
+<launch>
+
+  <!-- Basic data -->
+  <arg name="drone_id_namespace"                 default="drone1" />
+  <arg name="drone_id"                           default="1" />
+  <arg name="my_stack_directory"                 default="$(env AEROSTACK_STACK)" />
+
+  <!-- topics & services-->
+  <arg name="start_process_srv"                  default="start_process" />
+  <arg name="stop_process_srv"                   default="stop_process" />
+  <arg name="list_of_active_processes_topic"     default="list_of_active_processes" />
+
+  <group ns="$(arg drone_id_namespace)">
+
+    <!-- Basic data -->
+    <param name="~drone_id_namespace"               value="$(arg drone_id_namespace)"             type="str" />
+    <param name="~drone_id"                         value="$(arg drone_id)"                       type="str" />
+    <param name="~my_stack_directory"               value="$(arg my_stack_directory)"             type="str" />
+
+    <!-- topics & services -->
+    <param name="~start_process_srv"                value="$(arg start_process_srv)"              type="str" />
+    <param name="~stop_process_srv"                 value="$(arg stop_process_srv)"               type="str" />
+    <param name="~list_of_active_processes_topic"   value="$(arg list_of_active_processes_topic)" type="str" />
+
+    <node name="process_manager_process"
+          pkg="process_manager_process"
+          type="process_manager_process"
+          output="screen"/>
+
+    <test test-name="process_manager_process_test"
+          pkg="process_manager_process"
+          type="process_manager_process_test"/>
+
+  </group>
+
+</launch>

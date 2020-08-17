@@ -1,0 +1,54 @@
+<!-- Launches: alphanumeric_viewer -->
+<launch>
+	
+	<arg name="drone_id_namespace"  default="drone1" />
+	<arg name="my_stack_directory" 	default="$(env AEROSTACK_STACK)" />
+
+	<arg name="battery_topic_name" 	default="sensor_measurement/battery_state" />
+	<arg name="altitude_topic_name" 	default="sensor_measurement/altitude" />
+	<arg name="altitude_sea_level_topic_name" 	default="sensor_measurement/sea_level_altitude" />
+	<arg name="imu_topic_name" 	default="sensor_measurement/imu" />	
+	<arg name="temperature_topic_name" 	default="sensor_measurement/temperature" />	
+	<arg name="ground_speed_topic_name" 	default="sensor_measurement/speed" />
+	<arg name="actuator_command_roll_pitch_topic_name" 	default="actuator_command/roll_pitch" />
+	<arg name="actuator_command_altitude_yaw_topic_name" 	default="actuator_command/altitude_rate_yaw_rate" />
+	<arg name="assumed_control_mode_topic_name" 	default="motion_reference/assumed_control_mode" />
+	<arg name="status_topic_name" 	default="status" />
+	<arg name="self_localization_pose_topic_name" 	default="self_localization/pose" />
+	<arg name="self_localization_speed_topic_name" 	default="self_localization/speed" />
+	<arg name="motion_reference_speed_topic_name" 	default="motion_reference/speed" />
+	<arg name="motion_reference_pose_topic_name" 	default="motion_reference/pose" />
+	
+	<!--Opened window topic-->
+    <arg name="window_opened" default="window_opened"/>
+
+    <!--Closed window topic-->
+        <arg name="closed_opened" default="closed_opened"/>
+
+	<group ns="$(arg drone_id_namespace)">
+		<node name="alphanumeric_viewer" pkg="alphanumeric_viewer" type="alphanumeric_viewer" output="screen">
+			<param name="drone_id_namespace" value="$(arg drone_id_namespace)" type="string"/>
+			<param name="stackPath" value="$(arg my_stack_directory)" type="string"/>
+			<param name="battery_topic_name" value="$(arg battery_topic_name)" type="string"/>
+			<param name="altitude_topic_name" value="$(arg altitude_topic_name)" type="string"/>
+			<param name="altitude_sea_level_topic_name" value="$(arg altitude_sea_level_topic_name)" type="string"/>
+			<param name="imu_topic_name" value="$(arg imu_topic_name)" type="string"/>
+			<param name="temperature_topic_name" value="$(arg temperature_topic_name)" type="string"/>
+			<param name="ground_speed_topic_name" value="$(arg ground_speed_topic_name)" type="string"/>
+			<param name="actuator_command_roll_pitch_topic_name" value="$(arg actuator_command_roll_pitch_topic_name)" type="string"/>
+			<param name="actuator_command_altitude_yaw_topic_name" value="$(arg actuator_command_altitude_yaw_topic_name)" type="string"/>
+			<param name="assumed_control_mode_topic_name" value="$(arg assumed_control_mode_topic_name)" type="string"/>
+			<param name="status_topic_name" value="$(arg status_topic_name)" type="string"/>
+			<param name="self_localization_pose_topic_name" value="$(arg self_localization_pose_topic_name)" type="string"/>
+			<param name="self_localization_speed_topic_name" value="$(arg self_localization_speed_topic_name)" type="string"/>
+			<param name="motion_reference_speed_topic_name" value="$(arg motion_reference_speed_topic_name)" type="string"/>
+			<param name="motion_reference_pose_topic_name" value="$(arg motion_reference_pose_topic_name)" type="string"/>
+		</node>
+
+		<!--Opened window topic-->
+			<param name="window_opened" value="$(arg window_opened)" />
+
+		<!--Closed window topic-->
+			<param name="closed_opened" value="$(arg closed_opened)" />
+	</group>
+</launch>

@@ -1,0 +1,102 @@
+[submodule "stack/libraries/lib_cvgekf"]
+	path = stack/libraries/lib_cvgekf
+	url = https://bitbucket.org/joselusl/lib_cvgekf.git
+[submodule "stack/libraries/lib_cvgutils"]
+	path = stack/libraries/lib_cvgutils
+	url = https://bitbucket.org/jespestana/lib_cvgutils.git
+[submodule "stack/libraries/lib_newmat11"]
+	path = stack/libraries/lib_newmat11
+	url = https://bitbucket.org/joselusl/lib_newmat11.git
+[submodule "stack/libraries/lib_pugixml"]
+	path = stack_deprecated/libraries/lib_pugixml
+	url = https://bitbucket.org/joselusl/lib_pugixml.git
+[submodule "stack/droneDrivers/driversPlatforms/driverBebopDrone/bebop_autonomy"]
+	path = stack/hardware_interface/drivers_platforms/driver_bebop/bebop_autonomy
+	url = https://github.com/AutonomyLab/bebop_autonomy.git
+[submodule "stack/libraries/pugixml"]
+	path = stack/libraries/pugixml
+	url = https://github.com/joselusl/pugixml
+[submodule "stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros"]
+	path = stack/hardware_interface/drivers_platforms/driver_pixhawk/mavros
+	url = https://github.com/mavlink/mavros.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_process"]
+	path = stack/hardware_interface/drivers_sensors/driver_px4flow/driver_px4flow_process
+	url = https://bitbucket.org/jespestana/driver_px4flow_interface_rosmodule.git
+[submodule "stack/hardware_interface/drivers_sensors/driver_px4flow/px-ros-pkg"]
+	path = stack/hardware_interface/drivers_sensors/driver_px4flow/px-ros-pkg
+	url = https://github.com/cvg/px-ros-pkg.git
+[submodule "stack_obsolete/libraries/lib_pose"]
+	path = stack_deprecated/libraries/lib_pose
+	url = https://bitbucket.org/joselusl/lib_pose.git
+[submodule "stack_obsolete/libraries/lib_cvgthread"]
+	path = stack_deprecated/libraries/lib_cvgthread
+	url = https://bitbucket.org/jespestana/lib_cvgthread.git
+[submodule "stack/supervision_system/process_monitor/process_monitor_process"]
+	path = stack/process_management_system/process_monitor/process_monitor_process
+	url = https://bitbucket.org/visionaerialrobotics/process_monitor_process.git
+[submodule "stack/common/drone_process"]
+	path = stack_deprecated/common/drone_process
+	url = https://bitbucket.org/visionaerialrobotics/drone_process.git
+[submodule "stack/common/drone_module"]
+	path = stack_deprecated/common/drone_module
+	url = https://bitbucket.org/joselusl/dronemoduleros.git
+[submodule "stack/libraries/eigen_catkin"]
+	path = stack/libraries/eigen_catkin
+	url = https://github.com/suarez-ramon/eigen_catkin
+[submodule "stack/libraries/catkin_simple"]
+	path = stack/libraries/catkin_simple
+	url = https://github.com/suarez-ramon/catkin_simple
+[submodule "stack/common/robot_process"]
+	path = stack/common/robot_process
+	url = https://bitbucket.org/visionaerialrobotics/robot_process
+[submodule "stack/process_management_system/process_manager/process_manager_process"]
+	path = stack/process_management_system/process_manager/process_manager_process
+	url = https://bitbucket.org/visionaerialrobotics/process_manager_process.git
+[submodule "stack_devel/common/aerostack_msgs"]
+	path = stack/common/aerostack_msgs
+	url = https://bitbucket.org/visionaerialrobotics/aerostack_msgs.git
+[submodule "stack/common/msgs_adapters"]
+	path = stack/common/msgs_adapters
+	url = https://bitbucket.org/visionaerialrobotics/msgs_adapters.git
+[submodule "stack_devel/droneDrivers/drivers_sensors/utils/rosserial"]
+	path = stack_devel/droneDrivers/drivers_sensors/utils/rosserial
+	url = https://github.com/ros-drivers/rosserial.git
+[submodule "stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process"]
+	path = stack/hardware_interface/drivers_platforms/driver_rotors_simulator/driver_rotors_simulator_process
+	url = https://bitbucket.org/visionaerialrobotics/driver_rotors_simulator_process.git
+[submodule "stack/libraries/mav_comm"]
+	path = stack/libraries/mav_comm
+	url = https://github.com/ethz-asl/mav_comm.git
+[submodule "stack_deprecated/libraries/mav_comm_rotors"]
+	path = stack_deprecated/libraries/mav_comm_rotors
+	url = https://github.com/acgroba/mav_comm_rotors.git
+[submodule "stack_deprecated/common/droneMsgsROS"]
+	path = stack_deprecated/common/droneMsgsROS
+	url = https://bitbucket.org/joselusl/dronemsgsros.git
+[submodule "stack_deprecated/logging/droneLoggerROSModule"]
+	path = stack_deprecated/logging/droneLoggerROSModule
+	url = https://bitbucket.org/jespestana/droneloggerrosmodule.git
+[submodule "stack_deprecated/logging/lib_cvglogger"]
+	path = stack_deprecated/logging/lib_cvglogger
+	url = https://bitbucket.org/jespestana/lib_cvglogger.git
+[submodule "stack_deprecated/logging/lib_cvgloggerROS"]
+	path = stack_deprecated/logging/lib_cvgloggerROS
+	url = https://bitbucket.org/jespestana/lib_cvgloggerros.git
+[submodule "stack/simulation_system/rotors_simulator"]
+	path = stack/simulation_system/rotors_simulator
+	url = https://bitbucket.org/visionaerialrobotics/rotors_simulator.git
+[submodule "stack_devel/hardware_interface/platforms_interfaces/rotors_interface"]
+	path = stack_devel/hardware_interface/platforms_interfaces/rotors_interface
+	url = https://bitbucket.org/visionaerialrobotics/rotors_interface.git
+[submodule "stack/motion_control_system/quadrotor_pid_controller"]
+	path = stack/motion_control_system/quadrotor_pid_controller
+	url = https://bitbucket.org/visionaerialrobotics/quadrotor_pid_controller.git
+[submodule "stack/ground_control_system/alphanumeric_viewer"]
+	path = stack/ground_control_system/alphanumeric_viewer
+	url = https://bitbucket.org/visionaerialrobotics/alphanumeric_viewer.git
+[submodule "stack/ground_control_system/keyboard_teleoperation_interface"]
+	path = stack/ground_control_system/keyboard_teleoperation_interface
+	url = https://bitbucket.org/visionaerialrobotics/keyboard_teleoperation_interface.git
+[submodule "stack/motion_control_system/basic_actions_controller/drone_mid_level_autopilot"]
+	path = stack/motion_control_system/basic_actions_controller/drone_mid_level_autopilot
+	url = https://bitbucket.org/visionaerialrobotics/drone_mid_level_autopilot.git
