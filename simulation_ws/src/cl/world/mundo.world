@@ -571,5 +571,9 @@
       <pose frame=''>6.98607 -2.9956 0 0 -0 0</pose>
       <plugin name='Move' filename='libmove_plugin_node.so'/>
     </model>
+
+	    <!-- Only require one ROS interface plugin per world, as any other plugin can connect a Gazebo
+        topic to a ROS topic (or vise versa). -->
+    <plugin name="ros_interface_plugin" filename="librotors_gazebo_ros_interface_plugin.so"></plugin>
   </world>
 </sdf>
